@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Check Draft</title>
+    <style>
+        .topTitle
+        {
+            background-color : white;
+            font-size : 18px;
+            font-family : Tahoma;
+            font-weight : bold;
+            font-style : italic;
+        }
+
+        .header
+        {
+            background-color : silver;
+            text-align : center;
+            color : white;
+            font-size : 12px;
+            font-family : Tahoma;
+        }
+
+        .resultBody
+        {
+            background-color : white;
+            text-align : center;
+            font-size : 12px;
+            font-family : Tahoma;
+        }
+
+        .redFont {
+            color : red;
+        }
+
+        .redBG {
+            background-color : red;
+        }
+
+        .grayBG {
+            background-color : silver;
+        }
+
+        .tableH {
+            font-size: 12px;
+        }
+        
+        .passRow {
+            font-size: 12px;
+        }
+        
+        .failRow {
+            font-size: 12px;
+        }
+    </style>
+    <script type="text/javascript" language="javascript" >
+		
+    </script>
+</head>
+<body>
+    <table width=3500 cellpadding=0 cellspacing=1 bgcolor=gray>
+        <tr class="tableH"><td colspan=47 class="topTitle">Health Check Result</td></tr>
+        <tr class="tableH">
+            <td class="header" rowspan=2 width=100>No.</td>
+            <td class="header" rowspan=2 width=100>hostname</td>
+            <td class="header" rowspan=2 width=100>ip address</td>
+            <td class="header" rowspan=2 width=100>IOS version</td>
+            <td class="header" rowspan=2 width=60>overall</td>
+            <td class="header" colspan=27><b><em>Global Rule check</em></b></td>
+            <td class="header" colspan=5><b><em>FastEthernet Rule check</em></b></td>
+            <td class="header" colspan=2><b><em>Line con Rule check</em></b></td>
+            <td class="header" colspan=2><b><em>AUX con Rule check</em></b></td>
+            <td class="header" colspan=5><b><em>VTY con Rule check</em></b></td>
+            <td class="header" rowspan=2 width=160>Time Table</td>
+        </tr>
+        <tr class="tableH">
+
+			
+			
+			
+			
+			
+			
+			
+			
+			<td class="header">service timestamps debug</td>
+            <td class="header">service timestamps log</td>
+            <td class="header">service password-encryption</td>
+            <td class="header">enable secret</td>
+            <td class="header">clock timezone KST 9</td>
+            <td class="header">no ip source-route</td>
+            <td class="header">no service pad</td>
+            <td class="header">ip finger</td>
+            <td class="header">no ip http server</td>
+            <td class="header">boot network</td>
+            <td class="header">ip mask-reply</td>
+            <td class="header">no ip domain</td>
+            <td class="header">banner motd</td>
+            <td class="header">no service tcp-small-servers</td>
+            <td class="header">no service udp-small-servers</td>
+            <td class="header">aaa authentication login default group tacacs\+ local</td>
+            <td class="header">aaa authorization console</td>
+            <td class="header">aaa authorization exec default group tacacs\+ local </td>
+            <td class="header">username</td>
+            <td class="header">tacacs-server host 10.129.30.155</td>
+            <td class="header">ntp server</td>
+            <td class="header">logging 10.129.10.24</td>
+            <td class="header">snmp-server community Opas/IBM/Am5re RO SNMP_ACL</td>
+            <td class="header">snmp-server community Opas/IBM/Am5re RW</td>
+            <td class="header">snmp-server community public</td>
+            <td class="header">snmp-server community private</td>
+            <td class="header">.server</td>
+            <td class="header">ip directed-broadcast</td>
+            <td class="header">ip mask-reply</td>
+            <td class="header">no ip redirects</td>
+            <td class="header">no ip proxy-arp</td>
+            <td class="header">no ip unreachables</td>
+            <td class="header">password 7</td>
+            <td class="header">exec-timeout 5 0</td>
+            <td class="header">no exec</td>
+            <td class="header">exec-timeout 5 0</td>
+            <td class="header">password 7</td>
+            <td class="header">exec-timeout 5 0</td>
+            <td class="header">access-class</td>
+            <td class="header">transport input ssh</td>
+            <td class="header">transport output ssh</td>
+        </tr>
+        <tr class="passRow">
+            <td class="resultBody">0</td>
+            <td class="resultBody">SE-IBP-DC-3845-TEST-01</td>
+            <td class="resultBody">10.155.8.101</td>
+            <td class="resultBody">12.4(25g)</td>
+            <td headers="overAll" class="resultBody">Passed</td>
+            
+			
+			<td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="two" class="resultBody">Not Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+            <td headers="one" class="resultBody">Found(Passed)</td>
+        </tr>
+		<tr class="failRow">
+			<td class="resultBody">0</td>
+			<td class="resultBody">SE-IBP-DC-3560X-TEST-01</td>
+			<td class="resultBody">10.155.8.102</td>
+			<td class="resultBody">12.2(55)SE3</td>
+			<td headers="overAll" class="resultBody redFont">Failed</td>
+			
+			
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="one" class="resultBody redBG">Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+            <td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+			<td headers="two" class="resultBody redBG">Not Found(Failed)</td>
+		</tr>
+        <tr class="naRow">
+            <td class="resultBody">0</td>
+            <td class="resultBody">N/A</td>
+            <td class="resultBody">10.155.8.102</td>
+            <td class="resultBody">N/A</td>
+            <td headers="overAll" class="resultBody redFont">Failed</td>
+
+
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="one" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+            <td headers="two" class="resultBody grayBG">N/A</td>
+        </tr>
+    </table>
+</body>
+</html>
